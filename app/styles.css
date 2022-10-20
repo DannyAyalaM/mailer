@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #554dde;
+    --secundary-color: #eaeaea;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 3rem;
+}
+
+hr {
+    color: var(--secundary-color)
+}
+
+.img-container {
+    margin-top: 1rem;
+}
+
+.img-container .img-1{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.img-container .img-2{
+    width: 100px;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 200px;
+    /* animation: volar 10s;
+    animation-iteration-count: infinite; */
+}
+
+
+@keyframes volar {
+    from {
+        transform: translate(0, 0);
+    } to {
+        transform: translate(-500px, -500px);
+    }
+}
+
+.email {
+    margin: 1rem;
+    text-align: center;
+}
+
+.email input {
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.email input:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary-color);
+    transition: .5s;
+}
+
+.email input:focus {
+    outline: none
+}
+
+.asunto {
+    margin: 1rem;
+    text-align: center;
+}
+
+.asunto input {
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    width: 200px;
+}
+
+.asunto input:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary-color);
+    transition: .5s;
+}
+
+.asunto input:focus {
+    outline: none;
+}
+
+.text {
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.text textarea {
+    padding: .5rem;
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 100px;
+    border-color: #eaeaea;
+    border-radius: 8px;
+}
+
+.text textarea:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: .5s;
+}
+
+.text textarea:focus {
+    outline: none;
+}
+
+.send {
+    text-align: center;
+}
+
+.send button {
+    background-color: #fff;
+    border-color: var(--primary-color);
+    padding: .3rem;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.send button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: .5s;
+}
