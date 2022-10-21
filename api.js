@@ -23,7 +23,7 @@ app.post('/send', async (req, res) => {
         from: process.env.FROM,
         subject,
         text: html,
-        html: html
+        html: "html"
     }
 
     try {
