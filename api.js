@@ -17,17 +17,16 @@ app.get('/', (req, res) => {
 
 app.post('/send', async (req, res) => {
     const { to, subject, html } = req.body
-
     const msg = {
         to,
         from: process.env.FROM,
         subject,
-        text: html,
-        html: "html"
+        html,
     }
 
     try {
         await sgMail.send(msg)
+        
         res.sendStatus(204)
     } catch (error) {
         const messages = error.response.body.errors.map(e => e.message).join(' ')

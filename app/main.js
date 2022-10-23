@@ -10,7 +10,7 @@ loadTemplateInital = () => {
             <form id="form">
                 <div class="email"><input type="text" name="to" placeholder="juan@perez.com"/></div>
                 <div class="asunto"><input type="text" name="subject" placeholder="Asunto"/></div>
-                <div class="text"><textarea name="text"></textarea></div>
+                <div class="text"><textarea name="html"></textarea></div>
                 <div class="send"><button id="send" type="submit">Send</button></div>
             </form>
             <div id="error"></div>
